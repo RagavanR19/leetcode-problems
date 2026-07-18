@@ -4,7 +4,8 @@ class Solution {
 
         while(l<r){
             int d = r-l;
-            max = Math.max(max,d*Math.min(height[l],height[r]));
+            int dist = d*Math.min(height[l],height[r]);
+            max = Math.max(max,dist);
             if(height[r]>height[l]){
                 l++;
             }
